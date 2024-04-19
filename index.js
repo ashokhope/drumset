@@ -46,9 +46,15 @@ for(var i = 0 ; i< length; i++){
  function btnanime(btn){
     var activebutton= document.querySelector("."+btn);
     activebutton.classList.add("pressed");
+     activebutton.classList.add("black");
     setTimeout(
         function(){
             activebutton.classList.remove("pressed")
+        },100
+    ) ;
+     setTimeout(
+        function(){
+            activebutton.classList.remove("black")
         },100
     ) ;
  }
